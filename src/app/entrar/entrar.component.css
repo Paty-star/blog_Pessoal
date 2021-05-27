@@ -1,0 +1,10 @@
+#img-bg{
+    background-image: url('https://grumft.com/wp-content/uploads/2018/12/blogg-1024x735.jpg');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

@@ -16,13 +16,19 @@ export class AuthService {
 
   ) { }
   entrar(userLogin: Userlogin):Observable<Userlogin>{
-    return this.http.post<Userlogin>('htpp://localhost8080/usuarios/logar',Userlogin)
+    return this.http.post<Userlogin>('http://localhost8080/usuarios/logar',Userlogin)
 
   }
 
   cadastrar(user: User):Observable<User>{
     return this.http.post<User>('http://localhost8080/usuarios/cadastrar',user)
 
+    
+
+  }
+
+  getByIdUser(id: number):Observable<User>{
+    return this.http.get<User>(`http://localhost8080/usuarios/${id}`)
   }
   logado(){
     let ok: boolean =false
